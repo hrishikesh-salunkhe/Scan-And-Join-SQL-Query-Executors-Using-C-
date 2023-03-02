@@ -1,0 +1,10 @@
+/Users/hrishi/Downloads/CS539-p2/cmake-build-debug/CMakeFiles/seq-scan-test.dir
+/Users/hrishi/Downloads/CS539-p2/cmake-build-debug/CMakeFiles/filter-seq-scan-test.dir
+/Users/hrishi/Downloads/CS539-p2/cmake-build-debug/CMakeFiles/nested-loop-join-test.dir
+/Users/hrishi/Downloads/CS539-p2/cmake-build-debug/CMakeFiles/hash-join-test.dir
+/Users/hrishi/Downloads/CS539-p2/cmake-build-debug/CMakeFiles/complex-test.dir
+/Users/hrishi/Downloads/CS539-p2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/hrishi/Downloads/CS539-p2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/hrishi/Downloads/CS539-p2/cmake-build-debug/src/CMakeFiles/EXECUTOR.dir
+/Users/hrishi/Downloads/CS539-p2/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/Users/hrishi/Downloads/CS539-p2/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir

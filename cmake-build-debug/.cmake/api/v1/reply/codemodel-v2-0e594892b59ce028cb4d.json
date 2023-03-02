@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "CS539_Project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "EXECUTOR::@145eef247bfb46b6828c",
+					"jsonFile" : "target-EXECUTOR-Debug-05b18d405b7d2c1f13ff.json",
+					"name" : "EXECUTOR",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "complex-test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-complex-test-Debug-a4ef90c46141a04276cf.json",
+					"name" : "complex-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "filter-seq-scan-test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-filter-seq-scan-test-Debug-70fe9167c5d528f790ab.json",
+					"name" : "filter-seq-scan-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hash-join-test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hash-join-test-Debug-840c92bf82f09af4e90f.json",
+					"name" : "hash-join-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nested-loop-join-test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nested-loop-join-test-Debug-c22c5b25e12e7b65f339.json",
+					"name" : "nested-loop-join-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "seq-scan-test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-seq-scan-test-Debug-53936016e860453973bf.json",
+					"name" : "seq-scan-test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/hrishi/Downloads/CS539-p2/cmake-build-debug",
+		"source" : "/Users/hrishi/Downloads/CS539-p2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
