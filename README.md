@@ -1,14 +1,6 @@
-# CS539 - Database System
-
-Programming Project 2 - Query Execution
-
-## Project Description
-
-This programming project is to add support for executing queries in a database system. You will implement executors that are responsible for taking query plans and executing them. You will create executors that perform sequential scans, hash joins and aggregations.
+This programming project is to add support for executing queries in a database system. We will implement executors that are responsible for taking query plans and executing them. We will create executors that perform sequential scans, hash joins and aggregations.
 
 We will use the iterator query processing model (i.e., the Iterator model). Every query plan either returns a single tuple or indicates that there are no more tuples. This lets the executor implement a loop that just keeps calling `Next` on its children to get and process their tuples.
-
-Optional reading resources: [following a select statement through the PostgreSQL internals](https://patshaughnessy.net/2014/10/13/following-a-select-statement-through-postgres-internals)
 
 The project is comprised of the following task:
 
@@ -22,23 +14,15 @@ In this project, we fixed the tuple type and table type. All tables have the sam
   - `val1`: int type value.
   - `val2`: string type value.
 
-You can modify the initialization, `Init()`, `Next()` or add helper classes and functions in the executor realted .h files and .cpp files. But don't modify the pre-defined helpers functions we provide.
-
-We manually pre-define simple query plans in the test cases. You can read the code to have a high-level idea about how the queries be executed.
-
 ## Executors
 
 ### SEQUENTIAL SCANS
 
 Sequential scans iterate over a table and return its tuples one-at-a-time. We pass in the table to iterate in the initialization function. This simple sequential scans doesn't support filter by predicate.
 
-We provide the code for this executor as the reference to help you understand how iterator model works.
-
 ### FILTER SEQUENTIAL SCANS
 
 This executor is similar to the simple sequential scans executor. But it support the predicate filter function. We pass in the table and predicate in the initialization function.
-
-**Hint**: The `FilterPredicate` supports basic three comparisons. You just need to call the `evaluate()` function to compare it with the processed tuple.
 
 ### NESTED LOOP JOIN
 
@@ -46,7 +30,7 @@ This executor will have only once child that propagates tuples corresponding to 
 
 ### HASH JOIN
 
-Hash joins are used to combine the results of two child executors together. In this project, you just need to implement a basic hash join. For more details on hash joins, refer to the Lecture #9 notes on join algorithms. In this project, by convention the left child is used to build the hash table and the right child is used to probe.
+Hash joins are used to combine the results of two child executors together. By convention the left child is used to build the hash table and the right child is used to probe.
 
 We are providing you with a `SimpleHashJoinHashTable` implementation. You can use it to build the hash table and probe.
 
@@ -63,7 +47,6 @@ $ cmake ..
 $ make
 ```
 
-
 ## Testing
 
 You can test the individual components of this assignment using our testing file in the (`test/`) folder, you can modify this file to test and debug the functionality.
@@ -77,19 +60,3 @@ $ cd build
 $ make seq_scan_test
 $ ./seq_scan_test
 ```
-
-## Submission
-
-Compress the whole project folder and submit it. Include all the cmake files.
-
-## Grading Rubric
-
-Each project submission will be graded based on the following criteria:
-
-Does the submission successfully execute all of the test cases and produce the correct answer?
-Does the submission execute without any memory leaks?
-Does the submission follow the code formatting and style policies?
-
-Note that we will use additional test cases that are more complex and go beyond the sample test cases that we provide you.
-
-**WARNING: All of the code for this project must be your own. You may not copy source code from other students or other sources that you find on the web. Plagiarism will not be tolerated. See [Rutgers University Academic Integrity Policy](http://nbacademicintegrity.rutgers.edu/) for additional information.**
